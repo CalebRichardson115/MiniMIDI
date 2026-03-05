@@ -21,7 +21,7 @@ public class Main {
 		
 		try {
 			//midiEvents is used to generate events for the track that is to be played.
-			List<MidiEventData> midiEvents = MidiCsvParser.parse("src/MIDI/mystery_song.csv");
+			List<MidiEventData> midiEvents = MidiCsvParser.parse("src/MIDI/InputSong.csv");
 			Sequence sequence = new Sequence(Sequence.PPQ, 384);
 			Track track = sequence.createTrack();
 			
