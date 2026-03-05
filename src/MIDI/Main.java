@@ -10,10 +10,8 @@ import eventFactory.*;
 
 
 /*
- * MY GUESS:
- * This sounds almost uncanny to Billie Eillish's song "Bad Guy"
+ * Plays Billie Eilish's "Bad Guy" (thats the input song).
  *
- *  Main function is provided from the project specifications.
  *  Parses a provided csv file into a list before adding midi events to a track.
 */
 public class Main {
@@ -56,7 +54,7 @@ public class Main {
 					track.add(factory.createNoteOff(event.getStartEndTick(), modifiedNote, event.getVelocity(), event.getChannel()));
 				}
 			}		
-			//Sequencer starts playing the song. Code is provided directly from the project specifications.
+			//Sequencer starts playing the song.
 			Sequencer sequencer = MidiSystem.getSequencer();
 			sequencer.open();
 			sequencer.setSequence(sequence);
