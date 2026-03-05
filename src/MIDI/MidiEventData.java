@@ -1,7 +1,7 @@
 package midi;
 
 public class MidiEventData {
-	//Provided code from the project specifications.
+	//Midi event fields.
 	private int channel;
 	private int note;
 	private int startEndTick;
